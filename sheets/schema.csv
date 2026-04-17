@@ -1,0 +1,15 @@
+# RH-DB - esquema das 3 abas
+# Como usar:
+# 1. Crie uma Google Sheet chamada "RH-DB".
+# 2. Crie 3 abas com os nomes EXATOS: Funcionarios, Vencimentos, Documentos.
+# 3. Cole em cada aba a linha de cabecalho correspondente abaixo (tudo na linha 1).
+# 4. Nao mude a ordem das colunas - o Apps Script depende dela.
+
+# --- Aba: Funcionarios ---
+id,nome,cpf,cargo,departamento,data_admissao,status,email_corporativo,foto
+
+# --- Aba: Vencimentos ---
+id,funcionario_id,tipo,data_vencimento,observacoes,calendar_event_id,sincronizado_em
+
+# --- Aba: Documentos ---
+id,funcionario_id,tipo,descricao,arquivo_drive_url,data_upload
